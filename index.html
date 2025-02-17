@@ -1,0 +1,117 @@
+html_content = """
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>РЕГИОН - Проектно-монтажные работы</title>
+ <style>
+ body {
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ padding: 0;
+ background: #f5f5f5;
+ }
+ header, nav, footer {
+ text-align: center;
+ }
+ header {
+ background: #DC143C;
+ color: white;
+ padding: 10px 20px;
+ font-weight: 700;
+ }
+ nav {
+ background: #808080;
+ overflow: hidden;
+ }
+ nav a {
+ float: left;
+ display: block;
+ color: white;
+ padding: 14px 20px;
+ text-decoration: none;
+ font-weight: 700;
+ }
+ nav a:hover {
+ background: #ddd;
+ color: black;
+ }
+ .container {
+ padding: 20px;
+ }
+ h1, h2 {
+ color: #DC143C;
+ font-weight: 700;
+ }
+ .service-list {
+ list-style: none;
+ padding: 0;
+ }
+ .service-list li {
+ margin-bottom: 20px;
+ padding: 20px;
+ background: white;
+ border-radius: 8px;
+ }
+ .service-list img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+ margin-bottom: 10px;
+ }
+ p {
+ font-size: 16px;
+ line-height: 1.5;
+ }
+ footer {
+ background: #808080;
+ color: white;
+ padding: 10px 20px;
+ position: fixed;
+ width: 100%;
+ bottom: 0;
+ font-weight: 700;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>Компания РЕГИОН</h1>
+ </header>
+ <nav>
+ <a href="#home">Главная</a>
+ <a href="#services">Услуги</a>
+ <a href="#contact">Контакты</a>
+ </nav>
+ <div class="container">
+ <section id="home">
+ <h2>Добро пожаловать!</h2>
+ <p>Мы предлагаем проектные и монтажные работы по слаботочным системам.</p>
+ <img src="welcome.jpg" alt="Добро пожаловать">
+ </section>
+ <section id="services">
+ <h2>Наши услуги</h2>
+ <ul class="service-list">
+ <li><img src="cctv.jpg" alt="Видеонаблюдение"><p>Проектирование видеонаблюдения</p></li>
+ <li><img src="alarm.jpg" alt="Сигнализация"><p>Установка сигнализации</p></li>
+ <li><img src="cabling.jpg" alt="Кабельные системы"><p>Монтаж кабельных систем</p></li>
+ <li><img src="access.jpg" alt="Системы доступа"><p>Проектирование систем доступа</p></li>
+ <li><img src="network.jpg" alt="Компьютерные сети"><p>Проектирование сетей</p></li>
+ </ul>
+ </section>
+ <section id="contact">
+ <h2>Контакты</h2>
+ <p>Телефон: +7 (123) 456-78-90</p>
+ <p>Email: info@regioncompany.ru</p>
+ <p>Адрес: ул. Примерная, д. 1, г. Москва</p>
+ <img src="contact.jpg" alt="Контакты">
+ </section>
+ </div>
+ <footer>
+ <p>© 2025 РЕГИОН. Все права защищены.</p>
+ </footer>
+</body>
+</html>
+"""
+print(html_content)
