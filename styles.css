@@ -6,10 +6,10 @@ body {
   padding: 0;
   overflow-y: scroll; /* Добавляет вертикальную прокрутку */
   /* Добавляем фоновую картинку */
-  background-image: <img src="Photo2.jpg" alt="Описание изображения">
+  background-image: url('/Photo2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Это свойство обеспечивает эффект прокрутки фона */
   font-size: 30px; /* Увеличение размера шрифта */
 }
 
