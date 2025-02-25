@@ -1,10 +1,18 @@
+/* Общий стиль для всего документа */
 body {
-  font-family: 'Inter', sans-serif; /* Современный шрифт */
+  font-family: 'Amatic SC', cursive; /* Использование шрифта Amatic SC */
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
+  overflow-y: scroll; /* Добавляет вертикальную прокрутку */
+  /* Добавляем фоновую картинку */
+  background-image: url('path_to_your_background_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+/* Стиль для заголовка сайта */
 .header {
   background-color: #333;
   color: #fff;
@@ -17,6 +25,7 @@ body {
   font-size: 24px; /* Увеличим размер шрифта для заголовков */
 }
 
+/* Основной контент */
 .content {
   max-width: 800px;
   margin: 20px auto;
@@ -24,11 +33,12 @@ body {
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
-  border-radius: 8px; /* Скругленные углы для более современного вида */
+  border-radius: 8px; /* Скруглённые углы для более современного вида */
 }
 
+/* Заголовки внутри контента */
 h2 {
-  color: #dc3545;
+  color: #dc3545; /* Красный цвет для заголовков */
   margin-top: 0;
   margin-bottom: 15px; /* Немного увеличим отступ снизу */
   font-weight: bold; /* Жирный шрифт для выделения заголовков */
@@ -36,7 +46,7 @@ h2 {
 }
 
 p {
-  color: #7f8c8d;
+  color: #7f8c8d; /* Серый цвет для текста */
   line-height: 1.6;
   margin-bottom: 25px;
   word-wrap: break-word; /* Для корректного переноса длинных слов */
@@ -51,6 +61,7 @@ ul {
 li {
   margin-bottom: 5px;
   position: relative; /* Добавим маркеры для списка */
+
   &::before {
     content: "•";
     color: #dc3545; /* Цвет маркера соответствует заголовкам */
