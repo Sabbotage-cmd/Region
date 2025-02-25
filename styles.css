@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 26px; /* Увеличение размера шрифта */
 }
 
 /* Стиль для заголовка сайта */
@@ -18,11 +19,12 @@ body {
   color: #fff;
   text-align: center;
   padding: 20px;
+  font-size: 40px; /* Увеличение размера шрифта */
 }
 
 .header h1 {
   margin: 0;
-  font-size: 24px; /* Увеличим размер шрифта для заголовков */
+  font-size: 30px; /* Увеличим размер шрифта для заголовков */
 }
 
 /* Основной контент */
@@ -42,7 +44,8 @@ h2 {
   margin-top: 0;
   margin-bottom: 15px; /* Немного увеличим отступ снизу */
   font-weight: bold; /* Жирный шрифт для выделения заголовков */
-  letter-spacing: 0.5px; /* Небольшое расстояние между буквами для улучшения читаемости */
+  letter-spacing: 1px; /* Небольшое расстояние между буквами для улучшения читаемости */
+  font-size: 28px; /* Увеличение размера шрифта */
 }
 
 p {
