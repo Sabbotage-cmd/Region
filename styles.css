@@ -1,8 +1,8 @@
 body {
+  font-family: 'Inter', sans-serif; /* Современный шрифт */
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f2f2f2;
 }
 
 .header {
@@ -12,34 +12,63 @@ body {
   padding: 20px;
 }
 
+.header h1 {
+  margin: 0;
+  font-size: 24px; /* Увеличим размер шрифта для заголовков */
+}
+
 .content {
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px; /* Увеличение отступов для лучшего восприятия контента */
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
+  border-radius: 8px; /* Скругленные углы для более современного вида */
 }
 
-h1, h2 {
+h2 {
   color: #dc3545;
+  margin-top: 0;
+  margin-bottom: 15px; /* Немного увеличим отступ снизу */
+  font-weight: bold; /* Жирный шрифт для выделения заголовков */
+  letter-spacing: 0.5px; /* Небольшое расстояние между буквами для улучшения читаемости */
 }
 
 p {
   color: #7f8c8d;
   line-height: 1.6;
+  margin-bottom: 25px;
+  word-wrap: break-word; /* Для корректного переноса длинных слов */
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  position: relative; /* Добавим маркеры для списка */
+  &::before {
+    content: "•";
+    color: #dc3545; /* Цвет маркера соответствует заголовкам */
+    display: inline-block;
+    width: 1em; /* Ширина маркера */
+    margin-left: -1em;
+  }
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 40px; 
+    margin: 40px auto; 
+  }
+  h2 { font-size: 22px; } /* Увеличиваем размер заголовков на больших экранах */
 }
