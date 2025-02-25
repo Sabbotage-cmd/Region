@@ -9,7 +9,7 @@ body {
   background-image: url('/Photo2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Это свойство обеспечивает эффект прокрутки фона */
+  background-attachment: fixed;
   font-size: 30px; /* Увеличение размера шрифта */
 }
 
