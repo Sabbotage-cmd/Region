@@ -6,7 +6,7 @@ body {
   padding: 0;
   overflow-y: scroll; /* Добавляет вертикальную прокрутку */
   /* Добавляем фоновую картинку */
-  background-image: url('path_to_your_background_image.jpg');
+  background-image: <img src="Photo2.jpg" alt="Описание изображения">
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
