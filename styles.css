@@ -1,16 +1,15 @@
 /* Общий стиль для всего документа */
 body {
-  font-family: 'Amatic SC', cursive; /* Использование шрифта Amatic SC */
+  font-family: 'Amatic SC', cursive;
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  overflow-y: scroll; /* Добавляет вертикальную прокрутку */
+  overflow-y: scroll;
   /* Добавляем фоновую картинку */
   background-image: url('/Photo2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-size: 30px; /* Увеличение размера шрифта */
 }
 
 /* Стиль для заголовка сайта */
@@ -19,7 +18,9 @@ body {
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 60px; /* Увеличение размера шрифта */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header h1 {
@@ -30,29 +31,38 @@ body {
 /* Основной контент */
 .content {
   max-width: 800px;
+  width: 90%;
   margin: 20px auto;
-  padding: 30px; /* Увеличение отступов для лучшего восприятия контента */
+  padding: 30px; 
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: white;
-  border-radius: 8px; /* Скруглённые углы для более современного вида */
+  border-radius: 8px; 
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 60%;
+    margin-top: 40px;
+    padding: 50px;
+  }
 }
 
 /* Заголовки внутри контента */
 h2 {
-  color: #dc3545; /* Красный цвет для заголовков */
+  color: #dc3545;
   margin-top: 0;
-  margin-bottom: 15px; /* Немного увеличим отступ снизу */
-  font-weight: bold; /* Жирный шрифт для выделения заголовков */
-  letter-spacing: 1px; /* Небольшое расстояние между буквами для улучшения читаемости */
-  font-size: 80px; /* Увеличение размера шрифта */
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
 
 p {
-  color: #7f8c8d; /* Серый цвет для текста */
+  color: #7f8c8d;
   line-height: 1.6;
   margin-bottom: 25px;
-  word-wrap: break-word; /* Для корректного переноса длинных слов */
+  word-wrap: break-word;
 }
 
 ul {
@@ -62,16 +72,15 @@ ul {
 }
 
 li {
-  margin-bottom: 5px;
-  position: relative; /* Добавим маркеры для списка */
-
+  position: relative;
   &::before {
     content: "•";
-    color: #dc3545; /* Цвет маркера соответствует заголовкам */
+    color: #dc3545; 
     display: inline-block;
-    width: 1em; /* Ширина маркера */
+    width: 1em; 
     margin-left: -1em;
   }
+  margin-bottom: 5px;
 }
 
 img {
